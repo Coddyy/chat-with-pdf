@@ -58,6 +58,6 @@ if submit:
     with st.spinner(":sunglasses: I'm on it, hold on a moment..."):
         response = retrieval_chain.invoke({"input": question})
         res=response['answer']
-    st.header(res)
+    st.markdown(res)
 
 
